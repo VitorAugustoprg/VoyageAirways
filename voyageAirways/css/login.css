@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #163359;
+}
+.col-6 img{
+    width: 30vw;
+    height: 30vh;
+}
+
+.row{
+    padding: 10px;
+}
+.botao{
+    background-color: #163359;
+    width: 70%;
+}
+.botao:hover{
+    transform: scale(1.1);
+}
+

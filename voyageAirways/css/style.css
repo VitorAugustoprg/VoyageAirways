@@ -1,0 +1,316 @@
+body{
+  background-color: #ffffff !important;
+  margin: 0;
+  box-sizing: border-box;
+}
+section{
+  margin: 20px;
+}
+#header1{
+  position: relative;
+  height: 50vh;
+  overflow: hidden;
+  background-image: url('../../voyageAirways/imagem/site/backgroundAviao.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+#navbar-passagens{
+background-image: url('../../voyageAirways/imagem/site/background-passport-shadow2.svg');
+  position: relative;
+  height: 50vh;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+ img{
+    width: 22px;
+    height: 22px;
+ }
+ .teste{
+    padding-top: 4%;
+    margin-right: 50%;
+ }
+
+ 
+  .carousel{
+    width: 70vw;
+  }
+  .modalGrecia{
+    background-image: url('../../voyageAirways/imagem/site/cardGrecia.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 560px;
+    height: 340px;
+  }
+  .modalEspanha{
+    background-image: url('../../voyageAirways/imagem/site/cardEspanha.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 268px;
+    height: 340px;
+  }
+  .modalFranca{
+    background-image: url('../../voyageAirways/imagem/site/cardFranca.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 268px;
+    height: 340px;
+  }
+  .modalAlemanha{
+    background-image: url('../../voyageAirways/imagem/site/cardAlemanha.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 268px;
+    height: 340px;
+  }
+  .modalTurquia{
+    background-image: url('../../voyageAirways/imagem/site/cardTurquia.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 268px;
+    height: 340px;
+  }
+  .modalItalia{
+    background-image: url('../../voyageAirways/imagem/site/cardItalia.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 560px;
+    height: 340px;
+  }
+.borda{
+  border: 0.2rem #ffffff solid;
+} 
+
+
+.position-relative {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* Cor da sombra */ 
+}
+
+.modalGrecia:hover .overlay,
+.modalEspanha:hover .overlay,
+.modalFranca:hover .overlay,
+.modalAlemanha:hover .overlay,
+.modalTurquia:hover .overlay,
+.modalItalia:hover .overlay {
+  display: flex; /* Mostra overlay quando mouse estiver sobre a coluna */
+  cursor: pointer;
+  flex-direction: column; /* Exibe os elementos em coluna*/
+}
+.modalGrecia:hover .desaparecer,
+.modalEspanha:hover .desaparecer,
+.modalFranca:hover .desaparecer,
+.modalAlemanha:hover .desaparecer,
+.modalTurquia:hover .desaparecer,
+.modalItalia:hover .desaparecer {
+  display: none; /* Esconde o texto da imagem quando o mouse estiver sobre a imagem*/
+  
+}
+.position-relative:hover .overlay {
+  display: flex; /* Mostra overlay quando mouse estiver sobre a coluna */
+}
+
+.overlay button {
+  display: none; /* Esconde o botão inicialmente */
+}
+
+.position-relative:hover .overlay button {
+  display: block; /* Mostra botão quando mouse estiver sobre a coluna */
+}
+
+.overlay button {
+  position: relative;
+  z-index: 1;
+}
+
+.content {
+ padding-top: 180px;
+ font-size: 2rem;
+}
+.opa:hover .desaparecer-card{
+  display: none;
+}
+.opa:hover img .card-img-top{
+  width: 268px;
+  height: 340px;
+}
+#btnAdicionar {
+  opacity: 0;
+  transform: translateY(50%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+#btnAdicionar.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.modalGrecia{
+  border-radius: 5% 0 0 0;
+}
+.modalAlemanha{
+  border-radius: 0 0 0 5%;
+}
+.modalItalia{
+  border-radius: 0 0 5% 0;
+}
+.modalFranca{
+  border-radius: 0 5% 0 0;
+}
+.cabecalho{
+color: white;
+}
+.btn-entrar{
+  background-color: #066D6C; 
+}
+.footer {
+  background-color: #ffffff; 
+}
+
+.logo{
+  position: relative;
+  margin: 0;
+  height: 35px;
+  width: 35px;
+  z-index:1;
+  padding: 0;
+}
+.nav{
+  height: 40px;
+}
+.nav2{
+  height: 30px;
+  justify-content: space-around;
+}
+.btn-form{
+  background-color: #591D2D; 
+}
+.input-form{
+  border: 0;
+}
+.formulario input{
+  border: 0;
+  border-bottom: 1px solid black;
+}
+.destaque-texto{
+  color: #2672A8;
+  text-decoration: none;
+}
+.about-us{
+  text-align: justify;
+  width: 70vw;
+  padding: 0;
+}
+a.btn {
+  text-decoration: none;
+}
+form input{
+  border:none;
+  border-bottom: 1px solid black;
+}
+.cotainer .box-texto .hr{
+  border: none; /* Remove a borda padrão */
+  height: 1px; /* Define a altura da linha */
+  background-color: #000; /* Cor da linha */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Sombra escura */
+}
+.col-3 .card{
+  border-radius: 5%;
+}
+.col-3 .card {
+  border-radius: 5% 5% 0% 0%;
+}
+#btn-comprar{background-color: #163359;
+}
+#menu{
+  display: none;
+}
+.cards-info-tablet{
+  display: none;
+}
+.cards-info-phone{
+  display: none;
+}
+.header-phone{
+  display: none;
+}
+
+@media (max-width: 575.98px) { 
+  .galeria-img{
+    display: none;
+  }
+  .cards-info-phone{
+    display: block;
+  }
+  .card-4{
+    display: none;
+  }
+  #header1{
+    display: none;
+    
+  }
+  #menu{
+    display: block;
+  }
+  .header-phone{
+    display: block;
+    height: 40vh;
+    background-image: url('../../voyageAirways/imagem/site/bg-img-phone.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .poscionar{
+    height: 70%;
+    margin-right: 30%;
+    margin-left: 10%;
+  }
+ }
+
+
+@media (max-width: 767.98px) { 
+      .galeria-img{
+        display: none;
+      }
+      .card-4{
+        display: none;
+      }
+      .cards-info-tablet{
+        display: none;
+      }
+      .cards-info-phone{
+        display: block;
+        flex-direction: column;
+      }
+      #btn-home{
+        display: none;
+      }
+ }
+
+
+@media (max-width: 991.98px) {  }
+
+
+@media (max-width: 1199.98px) {  }
+
+
+@media (max-width: 1399.98px) {  }

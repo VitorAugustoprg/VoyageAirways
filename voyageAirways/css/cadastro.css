@@ -1,0 +1,54 @@
+.input, select{
+    width: 600px;
+    height: 60px;
+    border-radius: 15px;
+    border: 1px solid #5984a4;
+}
+h2{
+    color: #2d5a79;
+}
+#cpf:focus {
+    border: 1px solid yellow;
+}
+input[type='radio'] {
+    width: 6%;
+    height: 2%;
+}
+.sexo{
+    background-color: #2d5a79;
+}
+.box-masc, .box-fem, .box-outro{
+    display: flex;
+    align-items: center;
+}
+input::placeholder, select::placeholder{
+    font-size: 1.5rem;
+    padding-left: 10px;
+}
+.legenda{
+    margin: 30px;
+}
+#postal{
+    width: 120px;
+    text-align: center;
+    margin-right: 10px;
+}
+#postal option{
+    width: 100px;
+}
+ input#termos{
+width: 9%;
+}
+input#dados{
+width: 5%;
+}
+.botao{
+    height: 50px;
+    margin-bottom: 10px;
+    background-color: #2d5a79;
+    text-align: center;
+}
+.botao-login{
+    outline: 1px solid #5984a4;
+    width: 15%;
+}
